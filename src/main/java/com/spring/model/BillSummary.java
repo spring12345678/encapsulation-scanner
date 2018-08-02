@@ -51,8 +51,14 @@ public class BillSummary {
 		public void setPkgChargeAmt(Double pkgChargeAmt) {
 			this.pkgChargeAmt = pkgChargeAmt;
 		}
+		public  Double getGrandTotall() {
+			
+			
+			return (subTotal - (promoAmt) + (vatAmt + delChargeAmt + pkgChargeAmt));
+			
 
 	}
+}
 
 
 
